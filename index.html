@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vogue</title>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- TAILWIND CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- INDEX CSS -->
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body class="relative">
+    <!-- HEADER -->
+    <header class="header">
+      <!-- HEADER UP -->
+      <div class="head_up p-4">
+        <h1 class="headUp_title relative text-center text-8xl">VOGUE</h1>
+        <div
+          class="cursor-pointer absolute top-[50px] right-[50px] flex items-center justify-center pr-8"
+        >
+          <div class="relative">
+            <select
+              class="country appearance-none w-[110px] py-2 pr-8 pl-2 font-bold text-sm border-none tracking-widest focus:outline-none"
+            >
+              <option class="countryText">TURKIYE</option>
+              <option>ARABIA</option>
+              <option>ARABIA</option>
+              <option>ARABIA</option>
+              <option>ARABIA</option>
+            </select>
+            <i
+              class="icon absolute text-[12px] top-1/2 right-3 transform -translate-y-1/2 fa-solid fa-chevron-down pointer-events-none"
+            ></i>
+          </div>
+          <button
+            class="bg-black text-white py-2 px-4 text-sm font-medium tracking-widest"
+          >
+            ABONE OL
+          </button>
+          <i
+            class="search px-4 text-lg text-gray-700 fa-solid fa-magnifying-glass"
+          ></i>
+          <i class="menuBar text-2xl text-gray-700 fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <!-- SEARCH HISSE -->
+      <div
+        class="searchMain hidden flex bg-black items-center justify-center gap-2 py-6"
+      >
+        <input
+          class="w-[53%] px-4 rounded-sm h-[50px]"
+          type="input"
+          placeholder="Vogueda Arayin"
+        />
+        <i
+          class="search px-2 text-xl text-white fa-solid fa-magnifying-glass"
+        ></i>
+      </div>
+      <!-- MODAL-MENU HISSE -->
+      <div
+        class="modal absolute z-10 top-0 hidden w-[100%] h-auto bg-gray-500 text-6xl px-16 py-8"
+      >
+        <i
+          class="exit cursor-pointer flex justify-end fa-solid fa-circle-xmark"
+        ></i>
+        <div class="flex items-center justify-around">
+          <nav>
+            <ul class="flex flex-col gap-8">
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+            </ul>
+          </nav>
+
+          <nav>
+            <ul class="flex flex-col gap-8">
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+            </ul>
+          </nav>
+
+          <nav>
+            <ul class="flex flex-col gap-8">
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+              <li>Moda</li>
+            </ul>
+          </nav>
+        </div>
+        <nav>
+          <ul class="flex gap-6 px-20 pt-8 text-2xl">
+            <li>
+              <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- HEADER DOWN -->
+      <nav
+        class="head_down mb-[100px] flex items-center justify-center gap-6 py-4 text-xs tracking-widest font-medium"
+      >
+        <a>MODA</a>
+        <a>GUZELLIK</a>
+        <a>ENVOGUE</a>
+        <a>METROPOL</a>
+        <a>LIVING</a>
+        <a>VOGUE TV</a>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main px-16">
+      <!-- ONE CIKANLAR -->
+      <section>
+        <h1 class="top_title p-2 my-10 font-normal text-2xl">ONE CIKANLAR</h1>
+        <a href="#">
+          <figure class="relative">
+            <img
+              src="https://iavogue.tmgrup.com.tr/img/spotlight/25-01/30/2025-01-20_vogue-turkey_07-100-kopyasi-1738251985.jpg"
+            />
+            <div
+              class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center absolute bottom-[10px] left-[10px]"
+            >
+              <i class="fa-regular fa-clone"></i>
+            </div>
+          </figure>
+          <div class="top_foot p-4 ml-[16%] hover:text-gray-500">
+            <h2 class="text-6xl p-2 font-normal italic mb-2">
+              Vogue Turkiye Subat 2025
+            </h2>
+            <p class="text-sm p-2">30 OCAK 2025</p>
+          </div>
+        </a>
+      </section>
+      <!-- GUNDEM -->
+      <section>
+        <h3 class="top_title p-2 my-10 font-normal text-2xl">GUNDEM</h3>
+        <div class="grid grid-cols-2 gap-8">
+          <!-- LEFT -->
+          <div class="sticky top-0 h-screen flex items-start">
+            <a href="#" class="relative w-full">
+              <figure>
+                <img
+                  class="h-screen w-full object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/photo_gallery_m/25-02/03/gettyimages-2197324035.jpg"
+                />
+              </figure>
+              <div class="absolute bottom-[22px] text-white text-center px-4">
+                <h4 class="text-lg pb-2">Gundem</h4>
+                <h5 class="text-2xl font-bold pb-6">
+                  Taylor! Sabrina! Chappell! 2025 Grammy Ödülleri'nden En İyi
+                  Fotoğraflar
+                </h5>
+                <div class="w-[50px] h-[6px] bg-white mx-auto mb-2"></div>
+                <p>VOGUE</p>
+              </div>
+            </a>
+          </div>
+          <!-- RIGHT -->
+          <div class="flex flex-row gap-8">
+            <div class="flex flex-col gap-8">
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative">
+                <a href="#">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                  >
+                    <h4>GUZELLIK</h4>
+                    <p class="font-medium mb-4 text-xl tracking-wide">
+                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
+                      Makyajlari
+                    </p>
+                    <div
+                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                    ></div>
+                    <p>Nilsu Atala</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
