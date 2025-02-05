@@ -9,16 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
     <!-- RESET CSS -->
     <link rel="stylesheet" href="./reset.css" />
+
     <!-- TAILWIND CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
     <!-- INDEX CSS -->
     <link href="./index.css" rel="stylesheet" />
   </head>
+
   <body class="relative">
     <!-- HEADER -->
     <header class="header">
@@ -54,9 +58,7 @@
         </div>
       </div>
       <!-- SEARCH HISSE -->
-      <div
-        class="searchMain hidden flex bg-black items-center justify-center gap-2 py-6"
-      >
+      <div class="searchMain flex bg-black items-center justify-center">
         <input
           class="w-[53%] px-4 rounded-sm h-[50px]"
           type="input"
@@ -133,10 +135,11 @@
         <a>VOGUE TV</a>
       </nav>
     </header>
+
     <!-- MAIN -->
-    <main class="main px-16">
+    <main class="container main px-16">
       <!-- ONE CIKANLAR -->
-      <section>
+      <section class="pb-[80px]">
         <h1 class="top_title p-2 my-10 font-normal text-2xl">ONE CIKANLAR</h1>
         <a href="#">
           <figure class="relative">
@@ -149,16 +152,17 @@
               <i class="fa-regular fa-clone"></i>
             </div>
           </figure>
-          <div class="top_foot p-4 ml-[16%] hover:text-gray-500">
-            <h2 class="text-6xl p-2 font-normal italic mb-2">
+          <div class="top_foot px-8 pt-6 ml-[16%] hover:text-gray-500">
+            <h2 class="text-6xl pb-4 font-normal italic mb-2">
               Vogue Turkiye Subat 2025
             </h2>
-            <p class="text-sm p-2">30 OCAK 2025</p>
+            <p class="text-sm">30 OCAK 2025</p>
           </div>
         </a>
       </section>
+
       <!-- GUNDEM -->
-      <section>
+      <section class="pb-[80px]">
         <h3 class="top_title p-2 my-10 font-normal text-2xl">GUNDEM</h3>
         <div class="grid grid-cols-2 gap-8">
           <!-- LEFT -->
@@ -170,6 +174,9 @@
                   src="https://iavogue.tmgrup.com.tr/img/photo_gallery_m/25-02/03/gettyimages-2197324035.jpg"
                 />
               </figure>
+              <!-- QARA FON -->
+              <div class="absolute inset-0 bg-black opacity-30"></div>
+              <!-- METN -->
               <div class="absolute bottom-[22px] text-white text-center px-4">
                 <h4 class="text-lg pb-2">Gundem</h4>
                 <h5 class="text-2xl font-bold pb-6">
@@ -183,97 +190,101 @@
           </div>
           <!-- RIGHT -->
           <div class="flex flex-row gap-8">
-            <div class="flex flex-col gap-8">
-              <div class="relative">
-                <a href="#">
+            <div class="flex flex-col gap-4">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
                 </a>
               </div>
 
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
                 </a>
               </div>
 
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
                 </a>
               </div>
 
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
@@ -282,96 +293,75 @@
             </div>
 
             <div class="flex flex-col gap-8">
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
                 </a>
               </div>
 
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
                 </a>
               </div>
 
-              <div class="relative">
-                <a href="#">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
                   <figure>
                     <img
-                      class="w-[320px] h-[480px]"
+                      class="w-[320px] h-[470px]"
                       src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
                     />
                   </figure>
                   <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
+                    href="#"
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
                   >
                     <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
+                    <p class="font-medium mt-2 text-xl tracking-wide">
                       2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
                       Makyajlari
                     </p>
                     <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
-                    ></div>
-                    <p>Nilsu Atala</p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="relative">
-                <a href="#">
-                  <figure>
-                    <img
-                      class="w-[320px] h-[480px]"
-                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/gettyimages-2197332968.jpg"
-                    />
-                  </figure>
-                  <div
-                    class="absolute bottom-[50px] left-[25px] p-[20px] bg-white w-[295px] hover:text-gray-500"
-                  >
-                    <h4>GUZELLIK</h4>
-                    <p class="font-medium mb-4 text-xl tracking-wide">
-                      2025 Grammy Ödülleri: Kirmizi Halinin Favori Saç ve
-                      Makyajlari
-                    </p>
-                    <div
-                      class="w-[50px] h-[6px] bg-yellow-500 hover:bg-black mb-2"
+                      class="w-[50px] h-[6px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
                     ></div>
                     <p>Nilsu Atala</p>
                   </div>
@@ -381,7 +371,565 @@
           </div>
         </div>
       </section>
+
+      <!-- MODA -->
+      <section class="pb-[80px]">
+        <h3 class="top_title p-2 my-10 font-normal text-2xl">MODA</h3>
+        <div class="grid grid-cols-2 gap-8">
+          <!-- LEFT -->
+          <div class="sticky top-0 h-screen">
+            <a href="#" class="relative w-full">
+              <figure>
+                <img
+                  class="w-full h-screen object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/04/11-tailorboysatwork-francesbenjaminjohnston-1899-1900.jpg"
+                />
+              </figure>
+              <!-- QARA FON -->
+              <div class="inset-0 absolute bg-black opacity-30"></div>
+              <!-- METN -->
+              <div
+                class="absolute bottom-[30px] left-[15%] text-center text-white tracking-wider"
+              >
+                <h4 class="text-sm font-medium pb-1">MODA HABER</h4>
+                <p class="text-2xl font-medium pb-4">
+                  Met Gala 2025'in Dress Code'u Açiklandi
+                </p>
+                <div class="w-[40px] h-[4px] mb-2 bg-white mx-auto"></div>
+                <p class="text-sm">LEAH FAYE COOPER</p>
+              </div>
+            </a>
+          </div>
+          <!-- RIGHT -->
+          <div class="flex gap-8">
+            <!-- sol -->
+            <div class="flex flex-col gap-4">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- sag -->
+            <div class="flex flex-col gap-8">
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="relative h-[650px]">
+                <a href="#" class="group">
+                  <figure>
+                    <img
+                      class="w-[320px] h-[480px]"
+                      src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/2197302210.jpg"
+                    />
+                  </figure>
+                  <div
+                    class="absolute bottom-[-5px] left-[25px] p-[20px] bg-white w-[295px] group-hover:text-gray-500"
+                  >
+                    <h4>UNLU STILI</h4>
+                    <p class="font-normal mt-2 text-2xl">
+                      Sabrina Carpenter 2025 Grammy Ödüllerine Damgasini Vurdu
+                    </p>
+                    <div
+                      class="w-[40px] h-[4px] bg-yellow-500 mt-8 group-hover:bg-black mb-2"
+                    ></div>
+                    <p class="text-xs tracking-widest">HANNAH JACKSON</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GUZELLIK -->
+      <section class="pb-[80px]">
+        <h3 class="top_title p-2 my-10 font-normal text-2xl">GUZELLIK</h3>
+        <div class="flex gap-10">
+          <div class="relative h-[480px]">
+            <a href="#" class="group">
+              <figure>
+                <img
+                  class="w-[320px] h-[335px] object-cover object-[center_top]"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-01/27/zaira-water_2480x-1737965071.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[5px] left-[25px] p-6 bg-white group-hover:text-gray-500"
+              >
+                <h4 class="text-sm tracking-widest">BAKIM</h4>
+                <p class="text-2xl font-normal py-2">
+                  Kuru Cilt Nasil Nemlendirilir?
+                </p>
+                <div
+                  class="w-[40px] h-[4px] bg-yellow-500 mt-2 group-hover:bg-black"
+                ></div>
+                <p class="pt-2 text-xs tracking-widest">NILSU ATALA</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative h-[480px]">
+            <a href="#" class="group">
+              <figure>
+                <img
+                  class="w-[320px] h-[335px] object-cover object-[center_top]"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-01/28/screen-shot-2025-01.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[5px] left-[25px] p-6 bg-white group-hover:text-gray-500"
+              >
+                <h4 class="text-sm tracking-widest">BAKIM</h4>
+                <p class="text-2xl font-normal py-2">
+                  Kuru Cilt Nasil Nemlendirilir?
+                </p>
+                <div
+                  class="w-[40px] h-[4px] bg-yellow-500 mt-2 group-hover:bg-black"
+                ></div>
+                <p class="pt-2 text-xs tracking-widest">NILSU ATALA</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative h-[480px]">
+            <a href="#" class="group">
+              <figure>
+                <img
+                  class="w-[320px] h-[335px] object-cover object-[center_top]"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/03/00066-jean-paul-gaultier-spring-1738590312.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[5px] left-[25px] p-6 bg-white group-hover:text-gray-500"
+              >
+                <h4 class="text-sm tracking-widest">BAKIM</h4>
+                <p class="text-2xl font-normal py-2">
+                  Kuru Cilt Nasil Nemlendirilir?
+                </p>
+                <div
+                  class="w-[40px] h-[4px] bg-yellow-500 mt-2 group-hover:bg-black"
+                ></div>
+                <p class="pt-2 text-xs tracking-widest">NILSU ATALA</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative h-[480px]">
+            <a href="#" class="group">
+              <figure>
+                <img
+                  class="w-[320px] h-[335px] object-cover object-[center_top]"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-01/27/zaira-water_2480x-1737965071.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[5px] left-[25px] p-6 bg-white group-hover:text-gray-500"
+              >
+                <h4 class="text-sm tracking-widest">BAKIM</h4>
+                <p class="text-2xl font-normal py-2">
+                  Kuru Cilt Nasil Nemlendirilir?
+                </p>
+                <div
+                  class="w-[40px] h-[4px] bg-yellow-500 mt-2 group-hover:bg-black"
+                ></div>
+                <p class="pt-2 text-xs tracking-widest">NILSU ATALA</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- DAHA COX GOR -->
+        <div class="flex justify-end w-full">
+          <a
+            href="#"
+            class="more group flex flex-col justify-center items-center w-[320px] mt-8"
+          >
+            <h4 class="mt-8 font-bold text-xs tracking-widest">
+              DAHA FAZLASINI GOR
+            </h4>
+            <div
+              class="flex items-center justify-center mt-4 bg-black group-hover:bg-red-600 text-white rounded-full text-base size-[48px]"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- VOGUE TV -->
+      <section class="pb-[80px]">
+        <!-- BASLIQ HISSE -->
+        <div
+          class="top_title p-2 my-10 font-normal text-2xl flex justify-between"
+        >
+          <h3>VOGUE TV</h3>
+          <div class="text-lg">
+            <i class="leftIcon text-gray-500 fa-solid fa-chevron-left"></i>
+            <i class="rightIcon cursor-pointer fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <!-- BODY HISSE -->
+        <div class="overflow-hidden">
+          <div class="flex gap-10 slider">
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/04/ekran-resmi-2025-02-04-122334.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/04/ekran-resmi-2025-02-04-121924.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/25-02/04/ekran-resmi-2025-02-04-122334.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-12/11/ekran-resmi-2024-12-11-190254.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-12/11/ekran-resmi-2024-12-11-190254.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-02/27/yatay_25fps_01_00_05_12_edited.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-12/11/ekran-resmi-2024-12-11-190254.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-02/27/yatay_25fps_01_00_05_12_edited.jpg"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+
+            <div class="relative shrink-0">
+              <figure>
+                <img
+                  class="w-[320px] h-[480px] object-cover"
+                  src="https://iavogue.tmgrup.com.tr/img/vertical_b/24-12/11/ekran-resmi-2024-12-11-190254.png"
+                />
+              </figure>
+              <div
+                class="absolute bottom-[20%] left-[20px] w-[48px] h-[48px] bg-white rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h2 class="text-xl tracking-widest font-medium py-4">
+                EDA ERDEM,VOGUE ICONDA
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER HISSE -->
+    <footer class="bg-black/80 container">
+      <nav class="cursor-pointer pr-[6%]">
+        <ul
+          class="flex justify-end items-center gap-12 text-gray-400 text-xs font-bold tracking-widest"
+        >
+          <li>EDISYON</li>
+          <li>
+            <button class="bg-black text-white p-4">TURKIYE</button>
+          </li>
+          <li class="hover:text-white">
+            <button class="p-4">KUNYE</button>
+          </li>
+          <li class="hover:text-white">
+            <button class="p-4">HAKKIMIZDA</button>
+          </li>
+          <li class="hover:text-white">
+            <button class="p-4">KVKK AYDINLATMA METNI</button>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="text-xl bg-black/40 p-[6%]">
+        <ul class="flex gap-4 items-center justify-end">
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            f
+          </li>
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </li>
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+          <li
+            class="cursor-pointer size-[40px] flex items-center justify-center font-bold rounded-full hover:border-red-500 hover:text-red-500 border border-solid border-white text-2xl text-white"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <nav
+        class="flex items-center justify-center gap-6 py-4 text-xs tracking-wide font-medium text-white"
+      >
+        <a class="hover:text-gray-500">Moda</a>
+        <a class="hover:text-gray-500">Guzellik</a>
+        <a class="hover:text-gray-500">Envogue</a>
+        <a class="hover:text-gray-500">Metropol</a>
+        <a class="hover:text-gray-500">Living</a>
+        <a class="hover:text-gray-500">Vogue Tv</a>
+      </nav>
+      <a
+        class="flex items-center justify-center text-xs tracking-wide font-medium text-white py-8"
+        >@2025Turkuvaz Medya</a
+      >
+    </footer>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js"></script>
   </body>

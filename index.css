@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
 .head_up {
   border-bottom: 0.5px solid rgb(248, 243, 243);
 }
@@ -7,9 +10,6 @@
   font-family: "Playfair Display", serif;
   letter-spacing: -5px;
 }
-/* .country:hover {
-  background-color: rgb(237, 235, 235);
-} */
 .head_down {
   border-bottom: 0.5px solid rgb(213, 210, 210);
 }
@@ -26,4 +26,16 @@ input::placeholder {
 }
 input:focus {
   outline: rgb(45, 45, 152) solid 2px;
+}
+
+.searchMain{
+  height: 0px;
+  overflow: hidden;
+  transition: .3s height linear;
+}
+.more{
+  border-top: .5px solid rgb(200, 196, 196);
+}
+.slider{
+  white-space: nowrap;
 }

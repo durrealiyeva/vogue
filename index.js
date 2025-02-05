@@ -1,4 +1,4 @@
-const main=document.querySelector(".main")
+const main = document.querySelector(".main");
 const country = document.querySelector(".country");
 const iconDown = document.querySelector(".icon");
 const search = document.querySelector(".search");
@@ -6,6 +6,9 @@ const searchMain = document.querySelector(".searchMain");
 const menuBar = document.querySelector(".menuBar");
 const modal = document.querySelector(".modal");
 const exitIcon = document.querySelector(".exit");
+const slider = document.querySelector(".slider");
+const leftIcon = document.querySelector(".leftIcon");
+const rightIcon = document.querySelector(".rightIcon");
 
 // SELECT HISSESI
 country.addEventListener("mouseover", () => {
@@ -48,24 +51,51 @@ function styleGray() {
   iconDown.style.color = "black";
 }
 // SEARCH HISSESI
+let searchToogle = false;
 search.addEventListener("click", () => {
-  if (searchMain.classList.contains("hidden")) {
-    searchMain.classList.remove("hidden");
+  searchToogle = !searchToogle;
+  if (searchToogle) {
+    searchMain.style.height = "90px";
   } else {
-    searchMain.classList.add("hidden");
+    searchMain.style.height = "0";
   }
 });
 // Menu Hissesi
 menuBar.addEventListener("click", () => {
-  if(modal.classList.contains("hidden")){
-    modal.classList.remove("hidden")
-    main.classList.add("hidden")
-  }else{
-    modal.classList.add("hidden")
-    main.classList.remove("hidden")
+  if (modal.classList.contains("hidden")) {
+    modal.classList.remove("hidden");
+    main.classList.add("hidden");
+  } else {
+    modal.classList.add("hidden");
+    main.classList.remove("hidden");
   }
 });
-exitIcon.addEventListener("click",()=>{
-  modal.classList.add("hidden")
-  main.classList.remove("hidden")
-})
+exitIcon.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  main.classList.remove("hidden");
+});
+
+// SLIDER HISSESI
+let count = 0;
+rightIcon.addEventListener("click", () => {
+  if (count < 4) {
+    count++;
+    slider.style.transform = `translateX(-${count * 360}px)`;
+    leftIcon.style.color="black"
+    leftIcon.style.cursor="pointer"
+  }else{
+    rightIcon.style.color="gray"
+    rightIcon.style.cursor="default"
+  }
+});
+leftIcon.addEventListener("click", () => {
+  if (count > 0) {
+    count--;
+    slider.style.transform = `translateX(-${count * 360}px)`;
+    rightIcon.style.color="black"
+    rightIcon.style.cursor="pointer"
+  }else{
+    leftIcon.style.color="gray"
+    leftIcon.style.cursor="default"
+  }
+});
